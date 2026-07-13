@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>FitCheck - Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="app-header">
+    <div class="header-inner">
+        <div class="header-top">
+            <!-- <a href="profile.html" id="header-title" class="logo">
+                <img src="images/FCL.png" alt="FitCheck-logo" width="200">
+            </a> -->
+            <h1 class="logo">Profile</h1>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="page">
+
+        <div class="profile-header">
+            <div class="avatar avatar-lg">YO</div>
+            <div>
+                <div class="profile-name">You</div>
+                <div class="profile-handle">@you.fitcheck</div>
+            </div>
+        </div>
+
+        <div class="bio-row">
+            <p id="bio-text">Building confidence one fit at a time.</p>
+            <button class="icon-btn" id="bio-edit-btn" aria-label="Edit bio">&#9998</button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-cell">
+                <div class="stat-value">1</div>
+                <div class="stat-label">Posts</div>
+            </div>
+            <div class="stat-cell">
+                <div class="stat-value">3</div>
+                <div class="stat-label">Verdicts sent</div>
+            </div>
+            <div class="stat-cell">
+                <div class="stat-value">15</div>
+                <div class="stat-label">Verdicts received</div>
+            </div>
+        </div>
+
+        <div class="section-label">Your fit checks</div>
+        <div class="profile-grid">
+            <div class="grid-cell">&#129406</div>
+            <!-- more grid-cell divs get added here as the user posts -->
+        </div>
+
+    </section>
+</main>
+
+<button id="fab" aria-label="New fit check">+</button>
+
+<nav id="bottom-nav">
+    <a href="index.html" class="nav-btn">
+        <span class="nav-icon">&#8962</span>
+        <span class="nav-label">Home</span>
+    </a>
+    <a href="notification.html" class="nav-btn">
+        <span class="nav-icon">&#128276</span>
+        <span class="nav-badge"></span>
+        <span class="nav-label">Alerts</span>
+    </a>
+    <a href="profile.html" class="nav-btn active">
+        <span class="nav-icon">&#128100</span>
+        <span class="nav-label">Profile</span>
+    </a>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>FitCheck - Log In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-wrapper">
+    <div class="auth-card">
+        <a href="login.html" id="header-title" class="auth-logo logo"></a>
+        <p class="auth-subtitle">Know before you go.</p>
+
+        <form id="login-form">
+            <div class="form-group">
+                <label class="form-label" for="login-email">Email</label>
+                <input class="form-input" type="email" id="login-email" name="email" placeholder="you@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="login-password">Password</label>
+                <input class="form-input" type="password" id="login-password" name="password" placeholder="******" required>
+            </div>
+
+            <div class="form-row-between">
+                <a href="reset-password.html">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="form-submit">Log in</button>
+        </form>
+
+        <p class="form-footer">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+</div>
+
+</body>
+</html>

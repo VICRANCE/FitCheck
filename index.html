@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>FitCheck - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header id="app-header">
+    <div class="header-inner">
+        <div class="header-top">
+            <a href="#" id="header-title" class="logo">
+                <img src="images/FCL.png" alt="FitCheck-logo" width="200">
+            </a>
+        </div>
+
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="All">All</button>
+            <button class="filter-btn" data-filter="Date">Date</button>
+            <button class="filter-btn" data-filter="Interview">Interview</button>
+            <button class="filter-btn" data-filter="Everyday">Everyday</button>
+            <button class="filter-btn" data-filter="Event">Event</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section id="feed-posts" class="page">
+
+        <article class="post-card" data-occasion="Interview">
+            <div class="occasion-tag">Interview</div>
+            <div class="post-top">
+                <div class="avatar">HP</div>
+                <div>
+                    <div class="post-user-name">Happiness</div>
+                    <div class="post-time">2h</div>
+                </div>
+            </div>
+            <div class="post-image-placeholder">&#128085</div>
+            <p class="post-caption"><strong>Happiness</strong> <span>First round tomorrow morning - too much blazer? Need it to read confident, not stiff.</span></p>
+            <div class="verdict-row">
+                <button class="verdict-btn">&#128293 Send it <span>14</span></button>
+                <button class="verdict-btn">&#129519 Rethink it <span>2</span></button>
+                <button class="verdict-btn">&#128161 Almost <span>5</span></button>
+                <button class="verdict-btn">&#10024 Love it <span>3</span></button>
+            </div>
+            <div class="comments-section">
+                <button class="comments-toogle">&#128172 View 2 comments</button>
+                <div class="comment-list">
+                    <div class="comment-row"><strong>Ayo</strong> <span>The blazer is doing the work, keep it.</span></div>
+                    <div class="comment-row"><strong>Stylist - Lade</strong> <span>Swap the tie for a silk scarf, softens it without losing structure.</span></div>
+                </div>
+                <div class="comment-input-row">
+                    <input class="comment-input" type="text" placeholder="Add a read...">
+                    <button class="comment-send">&#10148</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="post-card" data-occasion="Date">
+            <div class="occasion-tag">Date</div>
+            <div class="post-top">
+                <div class="avatar">MC</div>
+                <div>
+                    <div class="post-user-name">Michael</div>
+                    <div class="post-time">5h</div>
+                </div>
+            </div>
+            <div class="post-image-placeholder">&#8986</div>
+            <p class="post-caption"><strong>Michael</strong> <span>Rooftop dinner, lowkey trying not to overdress.</span></p>
+            <div class="verdict-row">
+                <button class="verdict-btn">&#128293 Send it <span>22</span></button>
+                <button class="verdict-btn">&#129519 Rethink it <span>1</span></button>
+                <button class="verdict-btn">&#128161 Almost <span>3</span></button>
+                <button class="verdict-btn">&#10024 Love it <span>9</span></button>
+            </div>
+            <div class="comments-section">
+                <button class="comments-toogle">&#128172 View 1 comments</button>
+                <div class="comment-list">
+                    <div class="comment-row"><strong>Hannah</strong> <span>The watch is a great touch.</span></div>
+                </div>
+                <div class="comment-input-row">
+                    <input class="comment-input" type="text" placeholder="Add a read...">
+                    <button class="comment-send">&#10148</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="post-card" data-occasion="Everyday">
+            <div class="occasion-tag">Everyday</div>
+            <div class="post-top">
+                <div class="avatar">ES</div>
+                <div>
+                    <div class="post-user-name">Elsie</div>
+                    <div class="post-time">1d</div>
+                </div>
+            </div>
+            <div class="post-image-placeholder">&#128374</div>
+            <p class="post-caption"><strong>Elsie</strong> <span>Errands fit. Comfortable but i still want to look put together.</span></p>
+            <div class="verdict-row">
+                <button class="verdict-btn">&#128293 Send it <span>6</span></button>
+                <button class="verdict-btn">&#129519 Rethink it <span>4</span></button>
+                <button class="verdict-btn">&#128161 Almost <span>8</span></button>
+                <button class="verdict-btn">&#10024 Love it <span>2</span></button>
+            </div>
+            <div class="comments-section">
+                <button class="comments-toogle">&#128172 Be the first to comment</button>
+                <!-- <div class="comment-list">
+                    <div class="comment-row"><strong>Ayo</strong> <span>The blazer is doing the work, keep it.</span></div>
+                    <div class="comment-row"><strong>Stylist - Lade</strong> <span>Swap the tie for a silk scarf, softens it without losing structure.</span></div>
+                </div> -->
+                <div class="comment-input-row">
+                    <input class="comment-input" type="text" placeholder="Add a read...">
+                    <button class="comment-send">&#10148</button>
+                </div>
+            </div>
+        </article>
+
+    </section>
+</main>
+
+<button id="fab" aria-label="New fit check">+</button>
+
+<nav id="bottom-nav">
+    <a href="home.html" class="nav-btn active">
+        <span class="nav-icon">&#8962</span>
+        <span class="nav-label">Home</span>
+    </a>
+    <a href="notification.html" class="nav-btn">
+        <span class="nav-icon">&#128276</span>
+        <span class="nav-badge"></span>
+        <span class="nav-label">Alerts</span>
+    </a>
+    <a href="profile.html" class="nav-btn">
+        <span class="nav-icon">&#128100</span>
+        <span class="nav-label">Profile</span>
+    </a>
+</nav>
+
+
+</body>
+</html>
