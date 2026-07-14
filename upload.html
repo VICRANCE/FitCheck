@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>FitCheck - Log In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="app-header">
+    <div class="header-inner">
+        <div class="upload-header">
+            <h1>New fit check</h1>
+            <a href="index.html" class="icon-btn" aria-label="Cancel and go back" style="font-size: 20;">x</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="page">
+
+        <form id="upload-form">
+
+            <label for="photo-input" class="upload-drop" id="upload-drop">
+                <div id="upload-placeholder">
+                    <div class="upload-icon">+</div>
+                    <p>Tap to choose a photo</p>
+                </div>
+                <img id="upload-preview" class="hidden" alt="Preview">
+            </label>
+            <input type="file" id="photo-input" name="photo" accept="image/*" class="hidden">
+
+            <label class="form-label">Occasion</label>
+            <div class="pill-row" id="occasion-pills">
+                <button type="button" class="pill-active" data-occasion="Date">Date</button>
+                <button type="button" class="pill" data-occasion="Interview">Interview</button>
+                <button type="button" class="pill" data-occasion="Everyday">Everyday</button>
+                <button type="button" class="pill" data-occasion="Event">Event</button>
+            </div>
+
+            <label class="form-label" for="caption-input">Caption</label>
+            <textarea id="caption-input" name="caption" class="caption-box" rows="3" placeholder="What outfit do you need an opinion on?"></textarea>
+
+            <p class="form-note">Posts are visible to the FitCheck community once shared.</p>
+
+            <button type="submit" class="form-submit" id="submit-post">Post fit check</button>
+
+        </form>
+
+    </section>
+</main>
+
+<nav id="bottom-nav">
+    <a href="index.html" class="nav-btn active">
+        <span class="nav-icon">&#8962</span>
+        <span class="nav-label">Home</span>
+    </a>
+    <a href="notification.html" class="nav-btn">
+        <span class="nav-icon">&#128276</span>
+        <span class="nav-badge"></span>
+        <span class="nav-label">Alerts</span>
+    </a>
+    <a href="profile.html" class="nav-btn">
+        <span class="nav-icon">&#128100</span>
+        <span class="nav-label">Profile</span>
+    </a>
+</nav>
+
+</body>
+</html>
